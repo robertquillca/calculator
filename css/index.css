@@ -7,7 +7,7 @@
   --dark-background-button-primary: #303136;
   --dark-background-button-secondary: #005DB2;
   --dark-background-button-tertiary: #1991FF;
-  --dark-background-button-quaternary: #616161;
+  --dark-background-button-cuaternary: #616161;
 
   --dark-text-primary-color: #29A8FF;
   --dark-text-secondary-color: #339DFF; 
@@ -15,6 +15,15 @@
   --dark-text-cuaternary-color: #A5A5A5; 
 
   /* ======= LIGHT THEME ======= */
+  --light-background: #F7F8FB;
+  --light-background-button-primary: #ADE2FF;
+  --light-background-button-tertiary: #1991FF;
+  --light-background-button-quaternary: #616161;
+
+  --light-text-primary-color:  #38B9FF;;
+  --light-text-secondary-color: #339DFF; 
+  --light-text-tertiary-color: #B2DAFF; 
+  --light-text-cuaternary-color: #A5A5A5; 
 
 }
 
@@ -119,8 +128,8 @@ a {
 
 
   /* MODE: LIGHT THEME */
-  .calculator {
-    background-color: #fff;
+  /* .calculator {
+    background-color: var(--light-background);
   }
 
   .calculator #screen {
@@ -133,23 +142,26 @@ a {
   }
 
   .calculator button.button-number {
-    background-color: #c3eaff;
-    color: #000000;
+    background: var(--light-background-button-secondary);
+    color: var(--light-text-secondary-color);
+    border: 1px solid #FFF;
   }
 
   .calculator button.button-operator {
-    background-color: #ffd0fb;
-    color: #f967f3;
+    background-color: var(--light-background-button-primary);
+    color: var(--light-text-primary-color);
   }
 
   .calculator button.button-equal {
-    background-color: #adf9e7;
+    background: var(--light-background-button-tertiary);
     color: #000;
-  }
+    box-shadow: 0px 13px 23px rgba(0, 163, 255, 0.65), inset -3px 4px 11px #B0DFFF;
+    border-radius: 12px;
+  } */
 
   /* MODE: DARK THEME */
   .calculator.dark {
-    background-color: var(--background-dark);
+    background-color: var(--dark-background);
   }
 
   .calculator.dark #screen {
@@ -157,21 +169,21 @@ a {
   }
 
   .calculator.dark button#clear {
-    background-color: #2d191e;
-    color: #bd3740;
+    background-color: var(--dark-background-button-cuaternary);
+    color: var(--dark-text-cuaternary-color);
   }
 
   .calculator.dark button.button-number {
-    background-color: #1b2f38;
-    color: #f8fafb;
+    background-color: var(--dark-background-button-primary);
+    color: var(--dark-text-primary-color);
   }
 
   .calculator.dark button.button-operator {
-    background-color: #2e1f39;
-    color: #aa00a4;
+    background-color: var(--dark-background-button-secondary);
+    color: var(--dark-text-primary-color);
   }
 
   .calculator.dark button.button-equal {
-    background-color: #223323;
-    color: #ffffff;
+    background-color: var(--dark-background-button-tertiary);
+    color: var(--dark-text-tertiary-color);
   }
