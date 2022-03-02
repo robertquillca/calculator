@@ -1,8 +1,21 @@
 :root {
-  --main-theme-background: #2c2c2e;
-  --light-main-text: #38B9FF;
-  --light-theme-background: #F7F8FB;
-  --light-main-button-background: linear-gradient(129.7deg, rgba(255, 255, 255, 0.6) -9.69%, rgba(255, 255, 255, 0.4) 114.23%);
+
+  --background-main: #1c1c1e;
+
+  /* ======= DARK THEME ======= */
+  --dark-background: #17181A;
+  --dark-background-button-primary: #303136;
+  --dark-background-button-secondary: #005DB2;
+  --dark-background-button-tertiary: #1991FF;
+  --dark-background-button-quaternary: #616161;
+
+  --dark-text-primary-color: #29A8FF;
+  --dark-text-secondary-color: #339DFF; 
+  --dark-text-tertiary-color: #B2DAFF; 
+  --dark-text-cuaternary-color: #A5A5A5; 
+
+  /* ======= LIGHT THEME ======= */
+
 }
 
 * {
@@ -15,7 +28,7 @@
 
 body {
   font-family: 'sf pro display';
-  background-color: var(--main-theme-background);
+  background-color: var(--background-main);
 }
 
 a {
@@ -136,7 +149,7 @@ a {
 
   /* MODE: DARK THEME */
   .calculator.dark {
-    background-color: #071115;
+    background-color: var(--background-dark);
   }
 
   .calculator.dark #screen {
