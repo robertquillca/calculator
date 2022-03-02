@@ -60,7 +60,7 @@ a {
   width: auto;
   position: relative;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 1rem;
   }
 
 .calculator__theme {
