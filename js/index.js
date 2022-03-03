@@ -1,7 +1,6 @@
 "use strict"
 
 const documentReady = () => {
-  const valueElement = document.querySelector("screen-value");
 
   const display = document.querySelector("#screen");
   const buttons = document.querySelectorAll("button");
@@ -39,19 +38,7 @@ const documentReady = () => {
     themeToggleBtn.classList.toggle("active");
     isDark = !isDark;
   };
-  
 
+};
 
-
-
-
-
-
-
-
-
-
-
-
-
-}
+document.addEventListener ("DOMContentLoaded", documentReady);
