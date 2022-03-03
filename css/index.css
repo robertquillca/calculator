@@ -199,21 +199,26 @@ a {
     color: var(--dark-text-tertiary-color);
   }
 
-  .github {
+  .media {
     font-weight: 300;
   }
 
-  .github__link-container {
+  .media-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .media-icon__link {
     display: flex;
     gap: .3rem;
     align-items: center;
   }
 
-  .github__link-container {
+  .media-icon__link {
     color: var(--dark-background-button-cuaternary);
   }
 
-  .github__link-container:hover {
-    color: var(--dark-background-button-secondary);
+  .media-icon__link:hover {
+    color: var(--dark-text-tertiary-color);
     transition: all 0.1s ease-out;
   }
